@@ -53,20 +53,20 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int deliveryDistance = 90;
-        byte day = 1;
-        int day2 = day + 1;
-        int day3 = day2 + 1;
+        int deliveryDistance = 95;
+        int day = 1;
 
-        if (deliveryDistance <= 20) {
-            System.out.println( "Потребуется дней: " + day);
-        } else if (deliveryDistance > 20 && deliveryDistance <= 60) {
-            System.out.println( "Потребуется дней: " + day2);
-             } else if (deliveryDistance > 60 && deliveryDistance <= 100) {
-             System.out.println( "Потребуется дней: " + day3);
-                } else {
-                 System.out.println("доставки нет");
-        }
+        if ( deliveryDistance > 20){
+            day++;}
+
+            if ( deliveryDistance > 60){
+                day++;}
+        System.out.println("потребуется дней " + day);
+            if (deliveryDistance > 100) {
+                System.out.println("Доставки нет!");
+            }
+
+
     }
     public static void task5(){
         System.out.println("Задача 5");
@@ -79,29 +79,17 @@ public class Main {
                 System.out.println("Зима");
                 break;
             case 3:
-                System.out.println("Весна");
-                break;
             case 4:
-                System.out.println("Весна");
-                break;
             case 5:
                 System.out.println("Весна");
                 break;
             case 6:
-                System.out.println("Лето");
-                break;
             case 7:
-                System.out.println("Лето");
-                break;
             case 8:
                 System.out.println("Лето");
                 break;
             case 9:
-                System.out.println("Осень");
-                break;
             case 10:
-                System.out.println("Осень");
-                break;
             case 11:
                 System.out.println("Осень");
                 break;
